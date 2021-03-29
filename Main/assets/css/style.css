@@ -1,0 +1,52 @@
+#currentWeather h3 {
+    background-color: #fc5a03;
+    color:#fff;
+}
+
+.list-group a {
+    background-color:#fc5a03;
+    color:#fff;
+    text-align: left;
+}
+
+h4{
+    font-size: 3rem;
+    text-align: right;
+}
+
+.jumbotron{
+    background-color: #fc5a03;
+    color: rgb(255, 255, 255);
+    font-size: 12px;  
+    text-align: right;  
+}
+
+.uv-low{
+    background-color: rgb(7, 223, 202);
+    padding: 5px 5px;
+    color: white;
+}
+
+.uv-medium{
+    background-color: #e6d300;
+    padding: 5px 5px;
+    color: #ffffff;
+}
+
+.uv-high{
+    background-color: rgb(255, 153, 0);
+    padding: 5px 5px;
+    color: rgb(255, 255, 255);
+}
+
+.uv-very-high{
+    background-color: rgba(255, 0, 0, 0.927);
+    padding: 5px 5px;
+    color: whit#ffffff;
+}
+
+.uv-extreme{
+    background-color: rgb(218, 80, 218);
+    padding: 5px 5px;
+    color: #ffffff;
+}

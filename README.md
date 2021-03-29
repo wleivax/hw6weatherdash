@@ -1,6 +1,8 @@
 # hw6weatherdash
 homework #6
 
+GitHub Site: https://wleivax.github.io/hw6weatherdash/
+GitHub Repo: https://github.com/wleivax/hw6weatherdash/
 
 # 06 Server-Side APIs: Weather Dashboard
 
