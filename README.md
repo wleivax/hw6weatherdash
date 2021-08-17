@@ -4,44 +4,25 @@ homework #6
 GitHub Site: https://wleivax.github.io/hw6weatherdash/
 GitHub Repo: https://github.com/wleivax/hw6weatherdash/
 
-# 06 Server-Side APIs: Weather Dashboard
+# Description
+This project demonstrates utilizing third party API calls to retrieve weather data for a user supplied city. The weather data provided includes a weather-related icon and also a 5 day forecast for the selected city. Openweathermap.org api was incorporated for the weather information displayed. Date/time information was incorporated through the use of Day.js library.
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+Local storage was used to keep track of last searched upon city and have that city weather available upon browser refresh or launching the application. While the application is open, any user search for a city is subsquently added to a search history list. This permits the user to click a previously searched city to retrieve the weather about that city as opposed to having to search on it again.
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+The framework of the application was built in HTML for each of the sections: search history, search input & button, current weather information and 5 day forecast information. The information for each of those sections was dynamically added via jQuery. The weather dashboard application is also mobile responsive.
 
-## User Story
+Additionally, the ultraviolet index (UVI) is color coded based upon how severe the retrieved number is for the UVI. Another feature added to this application was making sure city name capitalization was consistent no matter how the user entered the city name. The first letter of each word of city name is now capitalized.
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+Code was added to prevent a user searched city from being added to the search history more than once. If a user searches for a city already on the list, the weather is retrieved for that city but the search history is not updated. Application is also displaying the wind degrees as a direction for current weather only (not the 5 day forecast): N, NNE, E, SSE, S, SSW, W, NNW.
 
-## Acceptance Criteria
+# Screenshots
+The following is a screenshot of the weather application following a user searched city name.
+![weather app](https://user-images.githubusercontent.com/73664011/129674986-c7922ad5-84d5-4a05-b7c9-26db22fd6a67.png)
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-WHEN I open the weather dashboard
-THEN I am presented with the last searched city forecast
-```
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
+# Technologies Used
+Third Party APIs
+jQuery
+Javascript
+Local Storage
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
